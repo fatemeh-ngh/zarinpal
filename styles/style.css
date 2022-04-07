@@ -344,6 +344,134 @@ header {
   height: 15px;
   margin-right: 5px;
 }
+
+.attributes{
+  width: 1170px;
+  margin: auto;
+  display:flex;
+  justify-content: space-between;
+}
+.definition{
+  width: 35%;
+  margin-top: 50px;
+}
+.items{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  padding: 30px;
+}
+.items img{
+  width: 60px;
+  height: 60px;
+}
+.items .item{
+  padding: 18px 25px 20px 0;
+}
+.items .item div{
+  display: flex;
+  align-items: center;
+}
+.items h4{
+  font-size: 1.5rem;
+  font-family: YekanBakhHeavy;
+  margin-right: 20px;
+}
+.items p{
+  margin: 20px 0 20px 10px;
+  font-size: 1rem;
+  font-family: YekanBakhMedium;
+  color: #303030;
+  line-height: 36px;
+}
+.definition h3{
+  font-family: YekanBakhHeavy;
+  font-size: 2rem;
+}
+
+.definition p{
+  width: 85%;
+  margin-top: 40px;
+  line-height: 40px;
+  font-size: 1rem;
+}
+.first-item{
+  border-left: 1px solid #e0e4e7;
+}
+.second-item{
+  border-bottom: 1px solid #e0e4e7;
+}
+.third-item{
+  border-top: 1px solid #e0e4e7;
+}
+.fourth-item{
+  border-right: 1px solid #e0e4e7;
+}
+
+.start-box{
+  width: 1170px;
+  height: 220px;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid silver;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.start-box h4{
+  font-family: YekanBakhHeavy;
+  font-size: 1.7rem;
+}
+.start-box p{
+  font-family: YekanBakhMedium;
+  font-size: 1.4rem;
+  color: #747480;
+  margin-top: 10px;
+}
+.start-box a{
+  text-decoration: none;
+  font-family: iranyekanwebmedium;
+  font-size: 0.9rem;
+  height: 28px;
+  line-height: 28px;
+  padding: 4px 14px;
+  background-color: #ffd900;
+  color: #000;
+  border-radius: 10px;
+}
+.support{
+  width: 1110px;
+  height: 70px;
+  padding: 0 30px;
+  margin: 50px auto;
+  background-color: #fbf6f1;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.support-number{
+  font-family: YekanBakhHeavy;
+  font-size: 1.5rem;
+}
+#line{
+  margin: 0 15px;
+}
+.phone-number{
+  color: #21254e;
+}
+.support-request{
+  display: flex;
+  color: #21254e;
+  font-family: YekanBakhBold;
+  font-size: 1.5rem;
+}
+.support-request img{
+  width: 20px;
+  margin-right: 10px;
+}
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -377,6 +505,38 @@ header {
   }
   .online-payment{
     width: 940px;
+  }
+  .attributes{
+    width: 924px;
+    padding: 0 8px;
+    flex-direction: column;
+  }
+  .definition {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .definition p{
+    width: 100%;
+    margin-top: 30px;
+  }
+  .first-item,
+  .second-item,
+  .third-item,
+  .fourth-item{
+    border: none;
+  }
+  .items{
+    width: 90%;
+    padding: 30px;
+  }
+  .items .item{
+    padding: 18px 0 20px 50px;
+  }
+  .start-box{
+    width: 940px;
+  }
+  .support{
+    width: 880px;
   }
 }
 
@@ -428,6 +588,20 @@ header {
   .section-text{
     width: 95%;
   }
+  .attributes{
+    width: auto;
+  }
+  .start-box{
+    margin: 0 38px;
+    width: calc(100% - 76px);
+  }
+  .support{
+    width: calc(100% - 120px);
+  }
+  .support-number
+  .support-request{
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -454,6 +628,35 @@ header {
     width: 460px;
     height: 480px;
   }
+  .definition{
+    text-align: center;
+    margin-top: 90px;
+  }
+  .definition h3{
+    font-size: 1.6rem;
+  }
+  .items{
+    width: 100%;
+    padding: 50px 0;
+  }
+  .items .item{
+    padding: 18px 0 20px 20px;
+  }
+  .start-box{
+    margin: 0 8px;
+    width: calc(100% - 16px);
+  }
+  .support{
+    flex-direction: column;
+    align-items: flex-start;
+    background: none;
+  }
+  .support-request{
+    background-color: #fbf6f1;
+    padding: 5px 20px;
+    border-radius: 35px;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 576px){
@@ -473,5 +676,35 @@ header {
   .section-text{
     width: 80%;
     padding: 0 10px;
+  }
+  .items{
+    padding: 50px 0;
+    grid-template-columns: 1fr;
+  }
+  .items .item{
+    padding: 18px 0;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .items .item p{
+    font-size: 1.1rem;
+  }
+  .start-box{
+    height: 180px;
+  }
+  .start-box h4{
+    font-size: 1.2rem;
+  }
+  .start-box p{
+    font-size: 1rem;
+  }
+  .support{
+    width: calc(100% - 60px);
+    padding: 0;
+    max-width: 50px 30px;
+  }
+  .support-number
+  .support-request{
+    font-size: 0.95rem;
   }
 }
